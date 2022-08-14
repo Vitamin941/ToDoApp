@@ -5,5 +5,5 @@
 
 Stack:
 - HTML
-- CSS [Tailwindcss]
+- CSS (Tailwind)
 - JS 
