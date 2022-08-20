@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+    .h-screen-90 {
+        height: 90vh;
+    }
+
     .w-15 {
         width: 15%
     }
