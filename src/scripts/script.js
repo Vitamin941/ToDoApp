@@ -1,7 +1,7 @@
+var counter = localStorage.getItem("counter") ? null : 0;
 var H1title = document.getElementsByClassName("title")[0]
 var container = document.getElementsByClassName("card-container")[0]
 H1title.innerText = new Date().toLocaleDateString()
-
 
 const createTodo = () => {
     let div = document.createElement("div")
@@ -14,3 +14,4 @@ const createTodo = () => {
     container.appendChild(div)
     console.log("clicked")
 }
+
