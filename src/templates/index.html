@@ -5,11 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/src/css/output.css">
-        <script src="/src/scripts/load.js"></script>
         <title>TodoApp</title>
     </head>
 <body>
-    <main class="flex font-mono" onload="loadTodos()">
+    <main class="flex font-mono">
         <nav class="flex-col w-15 bg-neutral-700 h-screen min-w-max">
             <div class="bg-neutral-700 h-10 flex items-center justify-center border-b-2 border-solid border-neutral-300">
                 <div class="mr-1 mt-1 block w-3 h-3 bg-red-800"></div>
@@ -31,9 +30,9 @@
             <div class="flex flex-col items-center mt-5 card-container">
                 
                 <div class="flex flex-row min-w-fit w-40 h-10 border-2 border-solid border-neutral-400">
-                    <input class="focus:outline-none text-sm lg:text-lg text-center h-full min-w-fit" placeholder="..." onchange="crossOut">
+                    <input class="focus:outline-none text-sm lg:text-lg text-center h-full min-w-fit text-container" placeholder="..." onchange="crossOut">
                     <div class="flex items-center justify-center h-full border-l-2 border-solid border-red-600">
-                        <input class="w-8 h-4" type="checkbox" name="check">
+                        <input class="w-8 h-4 checkbox" type="checkbox" name="check" onchange="toggleTodo()">
                     </div>
                 </div>
 
