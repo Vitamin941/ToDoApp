@@ -1,4 +1,4 @@
-var counter = localStorage.getItem("counter") ? null : 1;
+var counter = 0
 var H1title = document.getElementsByClassName("title")[0]
 var container = document.getElementsByClassName("card-container")[0]
 H1title.innerText = new Date().toLocaleDateString()
